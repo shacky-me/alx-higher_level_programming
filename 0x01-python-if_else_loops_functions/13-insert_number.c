@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+
 /**
- * insert_node - inserts a node.
- * @head: head.
- * @number: int to add.
- * Return: new node.
+ * insert_node - inserts a node
+ * @head: head
+ * @number: int to add
+ * Return: new node
  */
 
 listint_t *insert_node(listint_t **head, int number)
