@@ -1,7 +1,16 @@
 #!/usr/bin/python3
+
 if __name__ == "__main__":
     import sys
-    a = 0
-    for i in range(1, len(sys.argv)):
-        a = a + int(sys.argv[i])
-    print("{}".format(a))
+
+    args = list(sys.argv)
+    size = len(args) - 1
+
+    sum = 0
+    for n in range(1, size + 1):
+        if not isinstance(int(args[n]), int):
+            sum += 0
+            continue
+        else:
+            sum += int(args[n])
+    print("{}".format(sum))
