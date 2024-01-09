@@ -1,4 +1,13 @@
 #!/usr/bin/python3
-read_file = __import__('0-read_file').read_file
+"""
+Module reads a text file (UTF-8) and prints it to stdout
+"""
 
-read_file("my_file_0.txt")
+
+def read_file(filename=""):
+    """
+    Function reads a text file (UTF-8) and prints it to stdout
+    """
+    with open(filename) as f:
+        cont = f.read()
+        print(cont, end='')
